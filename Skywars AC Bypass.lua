@@ -8,6 +8,8 @@ _________               .__                   ____  ___
         
     Made by Enviie easy client AC bypass    
 ]]
+assert(not game.IsLoaded(game) and game.Loaded:Wait() or game)
+workspace.Lobby.KillPlates:Destroy()
 local NormGrav = workspace.Gravity
 local Players = game:GetService("Players")
 local Me = Players.LocalPlayer or Players.PlayerAdded:Wait()
